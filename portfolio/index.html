@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meena | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="./img/logo.jpg">
+</head>
+<body>
+<div class="stars" id="stars"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Meena logo">
+    </div>
+    
+    <!-- Desktop Navigation -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link">🏠 Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">👨‍💻 About</a></li>
+      <li><a href="#projects" class="mobile-nav-link">💼 Projects</a></li>
+      <li><a href="#contact" class="mobile-nav-link">📧 Contact</a></li>
+    </ul>
+    
+    <!-- Social Links -->
+    <div class="mobile-social">
+      <a href="https://www.linkedin.com/in/meena-p-" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/meenaprabhakaran" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <img src="./img/pic.png" alt="Meena" class="profile-photo">
+      <h1>Hello, I'm <span>MEENA</span></h1>
+      <p>Designer & Developer | Building Creative Web Solutions</p>
+      <a href="#projects" class="btn"><i class="fa-solid fa-laptop-code"></i> View My Work</a>
+      <a href="https://drive.google.com/file/d/1-h5v4LddwoYzMmxQPRNozLKigG9G_6rz/view?usp=drive_link" class="btn resume-btn" target="_blank"><i class="fas fa-file-alt"></i> View Resume</a>    
+    </div>
+  </header>
+
+  <div class="container" id="about">
+    <!-- About Me Section -->
+    <div class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        I am a passionate web developer and designer with a strong foundation in computer science. My focus is on creating responsive and interactive designs, blending creativity with functionality to deliver exceptional digital experiences.
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-name">HTML</div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <div class="skill-name">CSS</div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⚡</span>
+          <div class="skill-name">JavaScript</div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🐍</span>
+          <div class="skill-name">Python</div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🌶️</span>
+          <div class="skill-name">Flask</div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🗄️</span>
+          <div class="skill-name">MySQL</div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">📊</span>
+          <div class="skill-name">Data Analysis</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-cards-grid">
+        <!-- Masters Card -->
+        <div class="education-card">
+          <div class="year-badge">2025</div>
+          <center>
+          <div class="education-image-container">
+            <div class="education-image-wrapper">
+              <img src="pg_logo.jpg" alt="Vaishnav College" class="education-image">
+            </div>
+          </div>
+          </center>
+
+          <h3 class="card-title">Post Graduation</h3>
+          <div class="institution">DG Vaishnav College</div>
+          <p class="description">Master Of Science in Computer Science</p>
+          <div class="cgpa">
+            <span class="cgpa-tag">CGPA: 9.0</span>
+          </div>
+        </div>
+
+        <!-- UG Card -->
+        <div class="education-card">
+          <div class="year-badge">2023</div>
+          <center>
+          <div class="education-image-container">
+            <div class="education-image-wrapper">
+              <img src="ug_logo.jpg" alt="Soka Ikeda College" class="education-image">
+            </div>
+          </div>
+         </center>
+          <h3 class="card-title">Under Graduation</h3>
+          <div class="institution">Soka Ikeda College</div>
+          <p class="description">Bachelor Of Science in Computer Science</p>
+          <div class="cgpa">
+            <span class="cgpa-tag">CGPA: 8.8</span>
+          </div>
+        </div>
+
+        <!-- School Card -->
+        <div class="education-card">
+          <div class="year-badge">2020</div>
+         <center> 
+          <div class="education-image-container">
+            <div class="education-image-wrapper">
+              <img src="school_logo.jpg" alt="DR.Sivanthi Aditianar School" class="education-image">
+            </div>
+          </div>
+        </center>
+          <h3 class="card-title">Higher Secondary Education</h3>
+          <div class="institution">DR.Sivanthi Aditianar Matric.Hr.Sec.School</div>
+          <p class="description">Computer Science Stream with Mathematics</p>
+          <div class="cgpa">
+            <span class="cgpa-tag">Percentage: 62</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="section" id="internship">
+      <h2 class="section-title">Internship</h2>
+      <div class="internship-container">
+        <div class="internship-card">
+          <div class="year-badge">2024</div>
+        <center>  
+          <div class="internship-image-container">
+            <div class="internship-image-wrapper">
+              <img src="intern_logo.jpg" alt="Virtual Techz" class="internship-image">
+            </div>
+          </div>
+        </center>
+          <h3 class="card-title">Web Development Intern</h3>
+          <div class="institution">Virtual Techz</div>
+          <p class="description">Developed responsive websites and interactive dashboards using modern web technologies. Collaborated with senior developers to implement user-friendly interfaces and optimize performance.</p>
+          <div class="skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="section" id="certifications">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certification-cards-grid">
+        <!-- Data analysis Certification -->
+        <div class="certification-card">
+          <div class="year-badge">2025</div>
+          <center>   
+            <div class="certification-image-container">
+              <div class="certification-image-wrapper">
+                <img src="anudip_logo.jpg" alt="Anudip Foundation" class="certification-image">
+              </div>
+            </div>
+          </center>
+
+          <h3 class="card-title">Data Analysis Using Python</h3>
+          <div class="institution">Anudip Foundation</div>
+          <p class="description">Comprehensive certification covering Data Analysis and Python technologies.</p>
+          <ul class="cert-list">
+            <li class="cert-item">Data Visualization</li>
+            <li class="cert-item">Data Analysis with Python</li>
+            <li class="cert-item">Python Libraries</li>
+          </ul>
+          <div class="skills">
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+          </div>
+        </div>
+
+        <!-- UI/UX Certification -->
+        <div class="certification-card">
+          <div class="year-badge">2022</div>
+
+           <center>
+             <div class="certification-image-container">
+               <div class="certification-image-wrapper">
+                 <img src="doit.png" alt="DOIT Solutions" class="certification-image">
+                </div>
+              </div>
+            </center>
+
+          <h3 class="card-title">UI/UX Design</h3>
+          <div class="institution">DOIT SOLUTIONS</div>
+          <p class="description">Certification in UI/UX Design principles and practices.</p>
+          <ul class="cert-list">
+            <li class="cert-item">Responsive Design</li>
+            <li class="cert-item">Website Creation</li>
+            <li class="cert-item">Figma Prototyping</li>
+          </ul>
+          <div class="skills">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Wireframes</span>
+            <span class="skill-tag">Prototyping</span>
+          </div>
+        </div>
+
+        <!-- AWS Certification -->
+        <div class="certification-card">
+          <div class="year-badge">2023</div>
+           <center>
+             <div class="certification-image-container">
+               <div class="certification-image-wrapper">
+                 <img src="doit.png" alt="DOIT Solutions AWS" class="certification-image">
+                </div>
+              </div>
+            </center>
+
+          <h3 class="card-title">AWS Cloud Computing</h3>
+          <div class="institution">DOIT SOLUTIONS</div>
+          <p class="description">Cloud computing fundamentals and AWS services certification.</p>
+          <ul class="cert-list">
+            <li class="cert-item">Cloud Computing Concepts</li>
+            <li class="cert-item">AWS Core Services</li>
+            <li class="cert-item">Security & Compliance</li>
+          </ul>
+          <div class="skills">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">S3</span>
+          </div>
+        </div>
+
+        <!-- Data analysis Certification -->
+        <div class="certification-card">
+          <div class="year-badge">2025</div>
+          <center>
+            <div class="certification-image-container">
+              <div class="certification-image-wrapper">
+                <img src="forage-schema-logo.png" alt="Data Analytics" class="certification-image">
+              </div>
+            </div>
+          </center>
+
+          <h3 class="card-title">FORAGE</h3>
+          <div class="institution">Deloitte Partnership</div>
+          <p class="description">Certificate Completion in Data Analytics.</p>
+          <ul class="cert-list">
+            <li class="cert-item">Data Analytics</li>
+            <li class="cert-item">Data Visualization</li>
+            <li class="cert-item">Power BI</li>
+          </ul>
+          <div class="skills">
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-delay="0.2">
+        <div class="project-image">
+          <img src="project1.png" alt="Employee ID Generator project">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Dynamic Employee ID Generator</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">QR Code</span>
+            <span class="tech-tag">Python</span>
+          </div>
+          <p class="project-description">
+            Flask + MySQL project with QR code integration for employee ID generation and management system. Features dynamic ID creation, database management, and QR code generation for seamless employee identification.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/meenaprabhakaran/Employee_ID_Generator_with_QR_Code" class="btn btn-primary" target="_blank">
+              <svg class="github-icon" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              View on GitHub
+            </a>
+            <a href="https://drive.google.com/file/d/1aaAI1mWQ3yaUu-HN5R1PIudWjTr2YG8v/view?usp=drive_link" class="btn btn-secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-delay="0.4">
+        <div class="project-image">
+          <img src="./portfolio.png" alt="Portfolio Website project">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Portfolio Website</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Responsive</span>
+          </div>
+          <p class="project-description">
+            Responsive personal portfolio with modern UI using HTML, CSS, and JavaScript with animated elements. Features smooth animations, modern design principles, and optimized performance across all devices.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/meenaprabhakaran/portfolio-website" class="btn btn-primary" target="_blank">
+              <svg class="github-icon" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              View on GitHub
+            </a>
+            <a href="#" class="btn btn-secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-delay="0.6">
+        <div class="project-image">
+          <img src="twitter.png" alt="Twitter Hashtag Analysis project">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Twitter Hashtag Analysis</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Data Science</span>
+          </div>
+          <p class="project-description">
+            Python + Pandas + Matplotlib dashboard for data visualization and business intelligence. Comprehensive analysis of Twitter hashtag trends with interactive visualizations and insights.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/meenaprabhakaran/twitter-hashtag-analysis" class="btn btn-primary" target="_blank">
+              <svg class="github-icon" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              View on GitHub
+            </a>
+            <a href="https://github.com/meenaprabhakaran/Twitter-Hashtag-Analysis/blob/main/Twitter/Twitter%20Hashtag%20Analysis.ipynb" class="btn btn-secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="publications-section">
+    <h2 class="section-title">My Publications</h2>
+    <div class="publication-cards">
+      <!-- Publication -->
+      <div class="publication-card">
+        <h3>Dynamic Employee ID Generator Using Name-Based Numeric Encoding</h3>
+        <p><em>Published in: International Conference on Cybernetic Nexus(ICCN), 2025</em></p>
+        <ul>
+          <li>Proposed a system for unique numeric ID generation based on ASCII encoding.</li>
+          <li>Flask + MySQL based web app with QR Code authentication.</li>
+          <li>Enhanced security with role-based access control.</li>
+          <li>
+            <span class="tech-oval">Python</span>
+            <span class="tech-oval">Flask</span>
+            <span class="tech-oval">MySQL</span>
+            <span class="tech-oval">QR Code</span>
+          </li>
+        </ul>
+        <a href="https://drive.google.com/file/d/1iiKjJSdWr1qpndRcpk5BZ397_P3MUgWQ/view?usp=drive_link" class="article-button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14,2 14,8 20,8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10,9 9,9 8,9"></polyline>
+          </svg>
+          My Article
+        </a>
+         <div class="publication-buttons">
+          <a href="https://drive.google.com/file/d/1fWkH_Kk3uElTLjYHpFOGl748obSGiRvo/view?usp=drive_link" class="article-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+            My Certification
+          </a>
+          <a href="https://drive.google.com/file/d/1qJJY2BwKGmEQ-SJAmRN_3JjUyB_MYQDC/view?usp=drive_link" class="article-button research-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14,2 14,8 20,8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10,9 9,9 8,9"></polyline>
+            </svg>
+            Read My Research Paper
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+ <section class="contact" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Let's build something amazing together</p>
+  <div class="contact-container">
+    
+    <!-- Contact Form -->
+    <form class="contact-form" action="https://formspree.io/f/xgvnyqvp" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class="fas fa-envelope"></i> meenuprabha16@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 6381883836</p>
+      <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/meena-p-"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/meenaprabhakaran"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+  <footer class="footer">
+    <p>&copy; 2025 Meena | All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/meena-p-"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/meenaprabhakaran"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+ <script src="script.js"></script>
+</html>
