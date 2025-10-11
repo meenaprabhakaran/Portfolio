@@ -17,12 +17,10 @@ html {
   justify-content: center;
 }
 
-    body {
+body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(120deg, #1e3c72, #2a5298, #1e3c72);
-  background-size: 600% 600%;
-  animation: gradientShift 15s ease infinite;
+  background: #0a0f1a; /* Simple dark background */
   overflow-x: hidden;
   color: white;
   max-width: 100vw;
@@ -1722,3 +1720,4 @@ html {
         display: none;
       }
     }
+
