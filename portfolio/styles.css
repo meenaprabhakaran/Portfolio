@@ -20,7 +20,9 @@ html {
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0a0f1a; /* Simple dark background */
+  background: linear-gradient(120deg, #0a0f1a, #0f1419, #0a0f1a);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
   overflow-x: hidden;
   color: white;
   max-width: 100vw;
@@ -1720,4 +1722,5 @@ body {
         display: none;
       }
     }
+
 
