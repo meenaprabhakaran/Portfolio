@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0f1419; /* or #1a1f2e - Dark navy blue */
+  background: transparent; /* No background */
   overflow-x: hidden;
   color: white;
   max-width: 100vw;
@@ -1719,6 +1719,7 @@ body {
         display: none;
       }
     }
+
 
 
 
