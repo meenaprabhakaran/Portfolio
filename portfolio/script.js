@@ -68,51 +68,45 @@ function createStars() {
       }
     });
 
-    // Navigation functionality
-    const sections = [
-      { element: document.querySelector('.hero'), id: 'home' },
-      { element: document.querySelector('#about'), id: 'about' },
-      { element: document.querySelector('#education'), id: 'education' },
-      { element: document.querySelector('#internship'), id: 'internship' },
-      { element: document.querySelector('#certifications'), id: 'certifications' },
-      { element: document.querySelector('#projects'), id: 'projects' },
-      { element: document.querySelector('#contact'), id: 'contact' }
-    ];
+    // Navigation functionality   
+ const sections = [
+  { element: document.querySelector('#home'), id: 'home' },
+  { element: document.querySelector('#about'), id: 'about' },
+  { element: document.querySelector('#projects'), id: 'projects' },
+  { element: document.querySelector('#contact'), id: 'contact' }
+];
 
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
-    function updateActiveNav() {
-      const scrollPos = window.scrollY + 150;
-      let activeSection = 'home';
+function updateActiveNav() {
+  const scrollPos = window.scrollY + 100;
+  let activeSection = 'home';
 
-      sections.forEach(section => {
-        if (section.element) {
-          const offsetTop = section.element.offsetTop;
-          const height = section.element.offsetHeight;
-          
-          if (scrollPos >= offsetTop && scrollPos < offsetTop + height) {
-            activeSection = section.id;
-          }
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        const href = link.getAttribute('href');
-        
-        if (href === '#home' && activeSection === 'home') {
-          link.classList.add('active');
-        } else if (href === '#about' && (activeSection === 'about' || activeSection === 'education' || activeSection === 'internship' || activeSection === 'certifications')) {
-          link.classList.add('active');
-        } else if (href === '#projects' && activeSection === 'projects') {
-          link.classList.add('active');
-        } else if (href === '#contact' && activeSection === 'contact') {
-          link.classList.add('active');
-        }
-      });
+  // Check each section
+  sections.forEach(section => {
+    if (section.element) {
+      const offsetTop = section.element.offsetTop;
+      const height = section.element.offsetHeight;
+      
+      if (scrollPos >= offsetTop && scrollPos < offsetTop + height) {
+        activeSection = section.id;
+      }
     }
+  });
 
-    window.addEventListener('scroll', updateActiveNav);
+  // Update active class - only for matching section
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    const href = link.getAttribute('href').replace('#', '');
+    
+    if (href === activeSection) {
+      link.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveNav);
+window.addEventListener('load', updateActiveNav);
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -240,3 +234,4 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
       }
 
     });
+
