@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100vw;
+   background: #000000;
 }
     #home {
   padding-top: 80px;  /* equal to navbar height */
@@ -1719,6 +1720,7 @@ body {
         display: none;
       }
     }
+
 
 
 
