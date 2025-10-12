@@ -82,7 +82,7 @@ function createStars() {
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
     function updateActiveNav() {
-      const scrollPos = window.scrollY + 100;
+      const scrollPos = window.scrollY + 150;
       let activeSection = 'home';
 
       sections.forEach(section => {
@@ -238,4 +238,5 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
         hamburger.classList.remove('active');
         mobileNav.classList.remove('active');
       }
+
     });
