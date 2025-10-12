@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100vw;
+  background: transparent;
 }
     #home {
   padding-top: 80px;  /* equal to navbar height */
@@ -20,6 +21,7 @@ html {
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent; /* Fully transparent */
   overflow-x: hidden;
   color: white;
   max-width: 100vw;
@@ -1718,6 +1720,7 @@ body {
         display: none;
       }
     }
+
 
 
 
