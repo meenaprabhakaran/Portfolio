@@ -72,7 +72,7 @@ function createStars() {
  const sections = [
   { element: document.querySelector('#home'), id: 'home' },
   { element: document.querySelector('#about'), id: 'about' },
-  { element: document.querySelector('#projects'), id: 'projects' },
+  { element: document.querySelector('#publications'), id: 'projects' }, // HTML la #publications irukku
   { element: document.querySelector('#contact'), id: 'contact' }
 ];
 
@@ -80,9 +80,9 @@ const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
 function updateActiveNav() {
   const scrollPos = window.scrollY + 100;
-  let activeSection = 'home';
+  let activeSection = null;
 
-  // Check each section
+  // Find the current section
   sections.forEach(section => {
     if (section.element) {
       const offsetTop = section.element.offsetTop;
@@ -94,17 +94,19 @@ function updateActiveNav() {
     }
   });
 
-  // Update active class - only for matching section
+  // Update active class
   navLinks.forEach(link => {
     link.classList.remove('active');
     const href = link.getAttribute('href').replace('#', '');
     
+    // Match the link href with activeSection
     if (href === activeSection) {
       link.classList.add('active');
     }
   });
 }
 
+// Run on scroll and load
 window.addEventListener('scroll', updateActiveNav);
 window.addEventListener('load', updateActiveNav);
 
@@ -234,4 +236,5 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
       }
 
     });
+
 
